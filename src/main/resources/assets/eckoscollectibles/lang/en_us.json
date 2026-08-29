@@ -1,0 +1,13 @@
+{
+  "itemGroup.eckoscollectibles": "Example Mod Tab",
+  "block.eckoscollectibles.example_block": "Example Block",
+  "item.eckoscollectibles.example_item": "Example Item",
+
+  "eckoscollectibles.configuration.title": "Ecko's Collectibles Configs",
+  "eckoscollectibles.configuration.section.eckoscollectibles.common.toml": "Ecko's Collectibles Configs",
+  "eckoscollectibles.configuration.section.eckoscollectibles.common.toml.title": "Ecko's Collectibles Configs",
+  "eckoscollectibles.configuration.items": "Item List",
+  "eckoscollectibles.configuration.logDirtBlock": "Log Dirt Block",
+  "eckoscollectibles.configuration.magicNumberIntroduction": "Magic Number Text",
+  "eckoscollectibles.configuration.magicNumber": "Magic Number"
+}
