@@ -1,5 +1,6 @@
 package com.ecko.collectibles;
 
+import com.ecko.collectibles.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -31,6 +32,8 @@ public class EckosCollectibles {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModItems.register(modEventBus);
+
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab
@@ -46,7 +49,9 @@ public class EckosCollectibles {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.PUMPKIN_SKULL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
